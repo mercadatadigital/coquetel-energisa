@@ -8,8 +8,10 @@ import Content from '../../components/Content';
 import Header from '../../components/Header';
 import Paragraph from '../../components/Paragraph';
 import CircularButton from '../../components/CircularButton';
-import Italic from '../../components/Italic';
+import Subtitle from '../../components/Subtitle';
 import TextBlue from '../../components/TextBlue';
+import Italic from '../../components/Italic';
+import Button from '../../components/Button';
 
 function Page1() {
   const history = useHistory();
@@ -22,8 +24,13 @@ function Page1() {
     <Container>
       <CircularButton onClick={() => goPage('/2')} direction="back" />
       <Content>
-        <Header>ANÁLISE PRELIMINAR DE RISCO</Header>
-        <S.Textimage>
+        <Header>CAÇA-PALAVRAS</Header>
+        <S.Container>
+          <Italic>
+            Procure e marque, no diagrama de letras, as palavras em destaque no
+            texto.
+          </Italic>
+          <Subtitle>Análise Preliminar de risco</Subtitle>
           <Paragraph>
             Infelizmente, o <TextBlue>ACIDENTE</TextBlue> de trabalho é uma das
             principais causas de <TextBlue>MORTE</TextBlue> no Brasil. Para que
@@ -35,17 +42,20 @@ function Page1() {
             ser executado em determinado local. Tem como objetivo identificar
             <TextBlue> PROBLEMAS</TextBlue> ou <TextBlue>RISCOS</TextBlue> para
             as <TextBlue>PESSOAS</TextBlue>, para o meio
-            <TextBlue> AMBIENTE </TextBlue>, para o
-            <TextBlue>PATRIMÔNIO</TextBlue>e para a <TextBlue>IMAGEM </TextBlue>
-            e os serviços da empresa. A APR deve ser sempre desenvolvida pelos
-            colaboradores e funcionários de
+            <TextBlue> AMBIENTE</TextBlue>, para o
+            <TextBlue> PATRIMÔNIO </TextBlue>e para a{' '}
+            <TextBlue>IMAGEM </TextBlue>e os serviços da empresa. A APR deve ser
+            sempre desenvolvida pelos colaboradores e funcionários de
             <TextBlue> SEGURANÇA</TextBlue> do trabalho de forma integrada,
             listando todas as informações sobre a<TextBlue> ATIVIDADE</TextBlue>
             , seus riscos, efeitos que podem ser gerados, sua
             <TextBlue> GRAVIDADE</TextBlue> e as medidas corretivas ou
             preventivas para evitar acidentes e proteger os funcionários.
           </Paragraph>
-        </S.Textimage>
+          <Button last onClick={() => goPage('caca-palavras1')}>
+            Jogar!
+          </Button>
+        </S.Container>
       </Content>
       <CircularButton onClick={() => goPage('4')} />
     </Container>

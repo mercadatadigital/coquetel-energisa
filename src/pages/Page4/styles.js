@@ -1,73 +1,64 @@
-import styled, { keyframes, css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 560px;
-
-  background-clip: content-box;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-  margin-top: 50px;
-
-  color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 `;
 
-export const Words = styled.div`
+export const BoxGame = styled.div`
   display: flex;
-  flex-direction: column;
-  flex: 1;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+  background: #e1e1e1;
   width: 100%;
   margin-bottom: 10px;
 
-  p {
-    color: #000;
-    margin-bottom: 10px;
-    margin-top: 0;
-    text-align: justify;
-
-    span {
-      color: ${({ theme }) => theme.palette.primary.main};
-      font-weight: bold;
-      text-transform: uppercase;
-    }
+  &:last-child {
+    margin: 0;
   }
 `;
 
-export const Buttons = styled.div`
+export const InputArea = styled.div`
   display: flex;
-`;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
 
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-
-  to{
-    transform: rotate(360deg)
+  &:first-child {
+    margin: 0;
   }
 `;
 
-export const Loading = styled.div`
-  flex: 1;
+export const Textimage = styled.div`
+  img {
+    float: left;
+    width: 50%;
+    margin: 20px 20px 20px 0;
+  }
+
+  margin-bottom: 10px;
+`;
+
+export const Bullet = styled.span`
+  color: ${({ theme }) => theme.palette.primary.main};
+`;
+
+export const Number = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  ${(props) =>
-    props.loading &&
-    css`
-      svg {
-        color: #bbb;
-        font-size: 56px;
-        animation: ${rotate} 2s linear infinite;
-      }
-    `}
+  background-color: ${({ theme }) => theme.palette.primary.main};
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  color: white;
 `;
