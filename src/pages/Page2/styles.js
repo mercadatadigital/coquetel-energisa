@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const BoxGame = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   padding: 10px;
   background: #e1e1e1;
   width: 100%;
@@ -34,4 +34,19 @@ export const Textimage = styled.div`
   }
 
   margin-bottom: 10px;
+`;
+
+export const Bullet = styled.span`
+  color: ${({ theme }) => theme.palette.primary.main};
+`;
+
+export const Number = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme }) => theme.palette.primary.main};
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  color: white;
 `;
