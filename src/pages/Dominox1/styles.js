@@ -4,11 +4,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 560px;
-
-  background-clip: content-box;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
 `;
 
 export const Content = styled.div`
@@ -16,7 +11,6 @@ export const Content = styled.div`
   flex-direction: column;
   flex: 1;
   align-items: center;
-  margin-top: 50px;
 
   color: #000;
 `;
