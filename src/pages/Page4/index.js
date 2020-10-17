@@ -43,22 +43,33 @@ function Page4() {
           </Paragraph>
           <S.Content>
             <Paragraph>
-              Tipos de EPCs: • Extintor, mangueira e HIDRANTE; • CAPELA Química
-              (exaustor de vapores e gases tóxicos); • Lava-olhos e chuveiros de
-              emergência; • EXAUSTORES, sistemas de ventilação e controle de
-              temperatura; • Corrimão, guarda-corpos e redes de proteção; •
-              Isolação acústica; • Sinalizações de segurança, como: cones,
-              cavaletes, placas de aviso, sinalização de saída de emergência.
+              Tipos de EPCs:
+              <br />• Extintor, mangueira e <TextBlue>HIDRANTE</TextBlue>;
+              <br />• <TextBlue>CAPELA</TextBlue> Química (exaustor de vapores e
+              gases tóxicos);
+              <br />• Lava-olhos e chuveiros de emergência;
+              <br />• <TextBlue>EXAUSTORES</TextBlue>, sistemas de ventilação e
+              controle de temperatura;
+              <br />• Corrimão, guarda-corpos e redes de proteção;
+              <br />• Isolação acústica;
+              <br />• Sinalizações de segurança, como: cones, cavaletes, placas
+              de aviso, sinalização de saída de emergência.
             </Paragraph>
             <Paragraph>
-              Tipos de EPIs: • CAPACETE; • Protetor e ABAFADOR de ouvido; •
-              MÁSCARA filtrante para gases e aerossóis, RESPIRADOR facial e
-              semifacial, óculos e viseiras; • LUVAS, braçadeiras e mangotes; •
-              SAPATO, bota e coturno; • CINTO de segurança, arnês (armadura) e
-              sistemas antiquedas; • COLETE e avental.
+              Tipos de EPIs:
+              <br />• <TextBlue>CAPACETE</TextBlue>;
+              <br />• Protetor e ABAFADOR de ouvido;
+              <br />• <TextBlue>MÁSCARA</TextBlue> filtrante para gases e
+              aerossóis, <TextBlue>RESPIRADOR </TextBlue>
+              facial e semifacial, óculos e viseiras;
+              <br />• <TextBlue>LUVAS</TextBlue>, braçadeiras e mangotes;
+              <br />• <TextBlue>SAPATO</TextBlue>, bota e coturno;
+              <br />• <TextBlue>CINTO</TextBlue> de segurança, arnês (armadura)
+              e sistemas antiquedas;
+              <br />• <TextBlue>COLETE</TextBlue> e avental.
             </Paragraph>
           </S.Content>
-          <Button last onClick={() => goPage('caca-palavras1')}>
+          <Button last onClick={() => goPage('dominox1')}>
             Jogar!
           </Button>
         </S.Container>

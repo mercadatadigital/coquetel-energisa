@@ -9,8 +9,22 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #fbfbee;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    float: center;
+    margin-right: 2rem;
+    border-radius: 50%;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+  }
 `;
 
 export const BoxGame = styled.div`

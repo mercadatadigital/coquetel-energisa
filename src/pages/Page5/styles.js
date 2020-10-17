@@ -7,12 +7,6 @@ export const Container = styled.div`
   align-items: center;
 `;
 
-export const Content = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #fbfbee;
-`;
-
 export const BoxGame = styled.div`
   display: flex;
   justify-content: center;
