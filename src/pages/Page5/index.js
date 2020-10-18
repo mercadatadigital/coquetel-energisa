@@ -24,7 +24,7 @@ function Page5() {
     <Container>
       <CircularButton onClick={() => goPage('/4')} direction="back" />
       <Content>
-        <Header>EMBARALHADOS</Header>
+        <Header>EMBARALHADAS</Header>
         <S.Container>
           <Subtitle>Cultura de Segurança</Subtitle>
           <Subtitle>do Trabalho</Subtitle>
