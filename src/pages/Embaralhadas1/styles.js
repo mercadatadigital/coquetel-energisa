@@ -8,22 +8,46 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+
   justify-content: center;
   align-items: center;
-  color: black;
 
   img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    float: center;
-    margin-right: 2rem;
-    border-radius: 50%;
-    -webkit-shape-outside: circle();
-    shape-outside: circle();
+    height: 100%;
+    width: 100%;
+  }
+`;
+
+export const Inputs = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: end;
+  margin-left: 50px;
+  color: black;
+  gap: 5px;
+`;
+
+export const Input = styled.input`
+  width: 60px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid ${({ border }) => border};
+  line-height: 0;
+  background: ${({ background }) => background};
+  padding: 5px;
+  padding-top: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: ${({ border }) => border};
+
+  :focus {
+    filter: brightness(95%);
   }
 `;
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import * as S from './styles';
@@ -7,16 +7,35 @@ import Container from '../../components/Container';
 import Content from '../../components/Content';
 import Header from '../../components/Header';
 import Paragraph from '../../components/Paragraph';
-import CircularButton from '../../components/CircularButton';
-import Subtitle from '../../components/Subtitle';
-import TextBlue from '../../components/TextBlue';
 import Italic from '../../components/Italic';
 import Button from '../../components/Button';
 
-import image from '../../assets/page5.png';
+import image from '../../assets/embaralhadas.png';
 
 function Embaralhadas1() {
   const history = useHistory();
+
+  const input1Ref = useRef();
+  const input2Ref = useRef();
+  const input3Ref = useRef();
+  const input4Ref = useRef();
+  const input5Ref = useRef();
+  const input6Ref = useRef();
+  const input7Ref = useRef();
+  const input8Ref = useRef();
+
+  const RESULT = 'transparênciaconfiança';
+  const [word, setWord] = useState('');
+  const [disable, setDisable] = useState(true);
+
+  function validate(ref, event, check) {
+    if (event.target.value === check) {
+      const old = word;
+      setWord(word + event.target.value);
+      console.log(word);
+      ref.current.focus();
+    }
+  }
 
   const goPage = (page) => {
     history.push(page);
@@ -24,9 +43,8 @@ function Embaralhadas1() {
 
   return (
     <Container>
-      <CircularButton onClick={() => goPage('/4')} direction="back" />
       <Content>
-        <Header>EMBARALHADOS</Header>
+        <Header>EMBARALHADAS</Header>
         <S.Container>
           <Italic>
             Desembaralhe as sílabas e saiba o que deve haver entre empregadores
@@ -34,22 +52,72 @@ function Embaralhadas1() {
             trabalho em uma empresa.
           </Italic>
           <S.Content>
-            <p className="pa">PA</p>
-            <p className="ça">ÇA</p>
-            <p className="con">CON</p>
-            <p className="cia">CIA</p>
-            <img src={image} alt="homem-caindo" />
-            <p className="fi">FI</p>
-            <p className="an">AN</p>
-            <p className="trans">TRANS</p>
-            <p className="ren">RÊN</p>
+            <img src={image} alt="embaralhadas" />
           </S.Content>
-          <Button last onClick={() => goPage('embaralhadas1')}>
-            Jogar!
+          <S.Inputs>
+            <S.Input
+              ref={input8Ref}
+              background="#eff7fd"
+              border="#009bdb"
+              maxLength={5}
+              onChange={(event) => validate(input1Ref, event, 'trans')}
+            />
+            <S.Input
+              ref={input1Ref}
+              background="#f8eff6"
+              border="#ba007c"
+              maxLength={2}
+              onChange={(event) => validate(input2Ref, event, 'pa')}
+            />
+            <S.Input
+              ref={input2Ref}
+              background="#fdf8ec"
+              border="#e9bb00"
+              maxLength={3}
+              onChange={(event) => validate(input3Ref, event, 'rên')}
+            />
+            <S.Input
+              ref={input3Ref}
+              background="#f0ebf5"
+              border="#6d0f7d"
+              maxLength={3}
+              onChange={(event) => validate(input4Ref, event, 'cia')}
+            />
+            <Paragraph>E</Paragraph>
+            <S.Input
+              ref={input4Ref}
+              background="#eff5ed"
+              border="#009045"
+              maxLength={3}
+              onChange={(event) => validate(input5Ref, event, 'con')}
+            />
+            <S.Input
+              ref={input5Ref}
+              background="#faf2e9"
+              border="#d07401"
+              maxLength={2}
+              onChange={(event) => validate(input6Ref, event, 'fi')}
+            />
+            <S.Input
+              ref={input6Ref}
+              background="#f8ede7"
+              border="#bf0811"
+              maxLength={2}
+              onChange={(event) => validate(input7Ref, event, 'an')}
+            />
+            <S.Input
+              ref={input7Ref}
+              background="#e9e8f4"
+              border="#001d7e"
+              maxLength={2}
+              onChange={(event) => validate(input7Ref, event, 'ça')}
+            />
+          </S.Inputs>
+          <Button last onClick={() => goPage('5')}>
+            Voltar
           </Button>
         </S.Container>
       </Content>
-      <CircularButton onClick={() => goPage('5')} />
     </Container>
   );
 }
