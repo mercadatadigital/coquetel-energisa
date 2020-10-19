@@ -16,8 +16,12 @@ import Page4 from '../pages/Page4';
 import Page5 from '../pages/Page5';
 import Page6 from '../pages/Page6';
 import Page7 from '../pages/Page7';
+import Page8 from '../pages/Page8';
+import Page9 from '../pages/Page9';
+import Final from '../pages/Final';
 
 import CacaPalavras1 from '../pages/CacaPalavra1';
+import CacaPalavras2 from '../pages/CacaPalavra2';
 import Dominox1 from '../pages/Dominox1';
 import Embaralhadas1 from '../pages/Embaralhadas1';
 
@@ -42,7 +46,11 @@ function App() {
             <Route path="/5" component={Page5} />
             <Route path="/6" component={Page6} />
             <Route path="/7" component={Page7} />
+            <Route path="/8" component={Page8} />
+            <Route path="/9" component={Page9} />
+            <Route path="/final" component={Final} />
             <Route path="/caca-palavras1" component={CacaPalavras1} />
+            <Route path="/caca-palavras2" component={CacaPalavras2} />
             <Route path="/dominox1" component={Dominox1} />
             <Route path="/embaralhadas1" component={Embaralhadas1} />
           </Switch>
