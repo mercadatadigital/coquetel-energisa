@@ -1,11 +1,18 @@
 import styled from 'styled-components';
 
+export const Content = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
 export const BoxGame = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
   padding: 10px;
-  background: #e1e1e1;
+  background: #fbfbee;
   width: 100%;
   margin-bottom: 10px;
 

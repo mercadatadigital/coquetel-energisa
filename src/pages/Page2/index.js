@@ -25,6 +25,7 @@ import Italic from '../../components/Italic';
 import InputGame from '../../components/InputGame';
 import image from '../../assets/page2.png';
 import CircularButton from '../../components/CircularButton';
+import { TextBlue } from '../../components/TextBlue/styles';
 
 function Page2() {
   const input1Ref = useRef();
@@ -48,7 +49,7 @@ function Page2() {
   const input19Ref = useRef();
 
   const RESULT = 'longevidadeestresse';
-  const [word, setWord] = useState('                   ');
+  const [word, setWord] = useState('___________________');
 
   function validate(idx, ref, event) {
     if (event.target.value.length <= 0 || !ref.current) {
@@ -85,8 +86,9 @@ function Page2() {
         </Paragraph>
         <Paragraph>
           <S.Bullet>•</S.Bullet> Pratique atividades físicas, elas são
-          fundamentais para promover condicionamento, aumentar a 1 __________ e
-          diminuir o 2 ________.
+          fundamentais para promover condicionamento, aumentar a 1
+          <TextBlue> {word.substring(0, 11)}</TextBlue> e diminuir o 2{' '}
+          <TextBlue>{word.substring(11, 19)}</TextBlue>.
         </Paragraph>
         <Paragraph>
           <S.Bullet>•</S.Bullet> Procure informação e ajuda para parar de fumar
@@ -156,7 +158,7 @@ function Page2() {
             <FaPlane color="orange" />
             <InputGame
               success={
-                word[0] === ' ' || word[0] === ''
+                word[0] === ' ' || word[0] === '' || word[0] === '_'
                   ? null
                   : RESULT[0] === word[0].toLowerCase()
               }
@@ -170,7 +172,7 @@ function Page2() {
             <InputGame
               ref={input1Ref}
               success={
-                word[1] === ' ' || word[1] === ''
+                word[1] === ' ' || word[1] === '' || word[1] === '_'
                   ? null
                   : RESULT[1] === word[1].toLowerCase()
               }
@@ -185,7 +187,7 @@ function Page2() {
             <InputGame
               ref={input2Ref}
               success={
-                word[2] === ' ' || word[2] === ''
+                word[2] === ' ' || word[2] === '' || word[2] === '_'
                   ? null
                   : RESULT[2] === word[2].toLowerCase()
               }
@@ -199,7 +201,7 @@ function Page2() {
             <InputGame
               ref={input3Ref}
               success={
-                word[3] === ' ' || word[3] === ''
+                word[3] === ' ' || word[3] === '' || word[3] === '_'
                   ? null
                   : RESULT[3] === word[3].toLowerCase()
               }
@@ -213,7 +215,7 @@ function Page2() {
             <InputGame
               ref={input4Ref}
               success={
-                word[4] === ' ' || word[4] === ''
+                word[4] === ' ' || word[4] === '' || word[4] === '_'
                   ? null
                   : RESULT[4] === word[4].toLowerCase()
               }
@@ -227,7 +229,7 @@ function Page2() {
             <InputGame
               ref={input5Ref}
               success={
-                word[5] === ' ' || word[5] === ''
+                word[5] === ' ' || word[5] === '' || word[5] === '_'
                   ? null
                   : RESULT[5] === word[5].toLowerCase()
               }
@@ -241,7 +243,7 @@ function Page2() {
             <InputGame
               ref={input6Ref}
               success={
-                word[6] === ' ' || word[6] === ''
+                word[6] === ' ' || word[6] === '' || word[6] === '_'
                   ? null
                   : RESULT[6] === word[6].toLowerCase()
               }
@@ -255,7 +257,7 @@ function Page2() {
             <InputGame
               ref={input7Ref}
               success={
-                word[7] === ' ' || word[7] === ''
+                word[7] === ' ' || word[7] === '' || word[7] === '_'
                   ? null
                   : RESULT[7] === word[7].toLowerCase()
               }
@@ -269,7 +271,7 @@ function Page2() {
             <InputGame
               ref={input8Ref}
               success={
-                word[8] === ' ' || word[8] === ''
+                word[8] === ' ' || word[8] === '' || word[8] === '_'
                   ? null
                   : RESULT[8] === word[8].toLowerCase()
               }
@@ -283,7 +285,7 @@ function Page2() {
             <InputGame
               ref={input9Ref}
               success={
-                word[9] === ' ' || word[9] === ''
+                word[9] === ' ' || word[9] === '' || word[9] === '_'
                   ? null
                   : RESULT[9] === word[9].toLowerCase()
               }
@@ -297,7 +299,7 @@ function Page2() {
             <InputGame
               ref={input10Ref}
               success={
-                word[10] === ' ' || word[10] === ''
+                word[10] === ' ' || word[10] === '' || word[10] === '_'
                   ? null
                   : RESULT[10] === word[10].toLowerCase()
               }
@@ -315,7 +317,7 @@ function Page2() {
             <InputGame
               ref={input11Ref}
               success={
-                word[11] === ' ' || word[11] === ''
+                word[11] === ' ' || word[11] === '' || word[11] === '_'
                   ? null
                   : RESULT[11] === word[11].toLowerCase()
               }
@@ -329,7 +331,7 @@ function Page2() {
             <InputGame
               ref={input12Ref}
               success={
-                word[12] === ' ' || word[12] === ''
+                word[12] === ' ' || word[12] === '' || word[12] === '_'
                   ? null
                   : RESULT[12] === word[12].toLowerCase()
               }
@@ -344,7 +346,7 @@ function Page2() {
             <InputGame
               ref={input13Ref}
               success={
-                word[13] === ' ' || word[13] === ''
+                word[13] === ' ' || word[13] === '' || word[13] === '_'
                   ? null
                   : RESULT[13] === word[13].toLowerCase()
               }
@@ -358,7 +360,7 @@ function Page2() {
             <InputGame
               ref={input14Ref}
               success={
-                word[14] === ' ' || word[14] === ''
+                word[14] === ' ' || word[14] === '' || word[14] === '_'
                   ? null
                   : RESULT[14] === word[14].toLowerCase()
               }
@@ -372,7 +374,7 @@ function Page2() {
             <InputGame
               ref={input15Ref}
               success={
-                word[15] === ' ' || word[15] === ''
+                word[15] === ' ' || word[15] === '' || word[15] === '_'
                   ? null
                   : RESULT[15] === word[15].toLowerCase()
               }
@@ -386,7 +388,7 @@ function Page2() {
             <InputGame
               ref={input16Ref}
               success={
-                word[16] === ' ' || word[16] === ''
+                word[16] === ' ' || word[16] === '' || word[16] === '_'
                   ? null
                   : RESULT[16] === word[16].toLowerCase()
               }
@@ -400,7 +402,7 @@ function Page2() {
             <InputGame
               ref={input17Ref}
               success={
-                word[17] === ' ' || word[17] === ''
+                word[17] === ' ' || word[17] === '' || word[17] === '_'
                   ? null
                   : RESULT[17] === word[17].toLowerCase()
               }
@@ -414,7 +416,7 @@ function Page2() {
             <InputGame
               ref={input18Ref}
               success={
-                word[18] === ' ' || word[18] === ''
+                word[18] === ' ' || word[18] === '' || word[18] === '_'
                   ? null
                   : RESULT[18] === word[18].toLowerCase()
               }

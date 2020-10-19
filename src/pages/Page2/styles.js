@@ -5,7 +5,7 @@ export const BoxGame = styled.div`
   justify-content: center;
   align-items: flex-end;
   padding: 10px;
-  background: #e1e1e1;
+  background: #fbfbee;
   width: 100%;
   margin-bottom: 10px;
 

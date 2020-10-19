@@ -8,7 +8,7 @@ export const InputGame = styled.div`
 
     width: 23px;
     height: 23px;
-    border: 1px solid ${({ theme }) => theme.palette.secondary.main};
+    border: 1px solid #d4d721;
     border-radius: 20%;
 
     margin-top: 2px;
