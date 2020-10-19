@@ -26,7 +26,7 @@ import InputGame from '../../components/InputGame';
 import image from '../../assets/page2.png';
 import CircularButton from '../../components/CircularButton';
 
-function Page2() {
+function Page7() {
   const input1Ref = useRef();
   const input2Ref = useRef();
   const input3Ref = useRef();
@@ -309,7 +309,7 @@ function Page2() {
         </S.BoxGame>
 
         <S.BoxGame>
-          <S.Number>2</S.Number>
+          <S.Number>1</S.Number>
           <S.InputArea>
             <GiSwirledShell color="green" />
             <InputGame
@@ -430,4 +430,4 @@ function Page2() {
   );
 }
 
-export default Page2;
+export default Page7;

@@ -59,7 +59,7 @@ function Page5() {
           </Button>
         </S.Container>
       </Content>
-      <CircularButton onClick={() => goPage('5')} />
+      <CircularButton onClick={() => goPage('6')} />
     </Container>
   );
 }
