@@ -7,11 +7,13 @@ import Container from '../../components/Container';
 import Content from '../../components/Content';
 import Header from '../../components/Header';
 import Paragraph from '../../components/Paragraph';
+import ParagraphList from '../../components/ParagraphList';
 import CircularButton from '../../components/CircularButton';
 import Subtitle from '../../components/Subtitle';
 import TextBlue from '../../components/TextBlue';
 import Italic from '../../components/Italic';
 import Button from '../../components/Button';
+import icon from '../../assets/dominox.svg';
 
 function Page4() {
   const history = useHistory();
@@ -24,7 +26,7 @@ function Page4() {
     <Container>
       <CircularButton onClick={() => goPage('/3')} direction="back" />
       <Content>
-        <Header>DOMINOX</Header>
+        <Header src={icon}>DOMINOX</Header>
         <S.Container>
           <Italic>
             Preencha o diagrama, respeitando os cruzamentos, com as palavras em
@@ -42,7 +44,7 @@ function Page4() {
             orientações sobre a utilização adequada do EPI.
           </Paragraph>
           <S.Content>
-            <Paragraph>
+            <ParagraphList>
               Tipos de EPCs:
               <br />• Extintor, mangueira e <TextBlue>HIDRANTE</TextBlue>;
               <br />• <TextBlue>CAPELA</TextBlue> Química (exaustor de vapores e
@@ -54,8 +56,8 @@ function Page4() {
               <br />• Isolação acústica;
               <br />• Sinalizações de segurança, como: cones, cavaletes, placas
               de aviso, sinalização de saída de emergência.
-            </Paragraph>
-            <Paragraph>
+            </ParagraphList>
+            <ParagraphList>
               Tipos de EPIs:
               <br />• <TextBlue>CAPACETE</TextBlue>;
               <br />• Protetor e ABAFADOR de ouvido;
@@ -67,7 +69,7 @@ function Page4() {
               <br />• <TextBlue>CINTO</TextBlue> de segurança, arnês (armadura)
               e sistemas antiquedas;
               <br />• <TextBlue>COLETE</TextBlue> e avental.
-            </Paragraph>
+            </ParagraphList>
           </S.Content>
           <Button last onClick={() => goPage('dominox1')}>
             Jogar!

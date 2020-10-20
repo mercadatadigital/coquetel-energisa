@@ -10,6 +10,7 @@ import TextThrough from '../../components/TextThrough';
 import Input from '../../components/DominoxInput';
 import Paragraph from '../../components/Paragraph';
 import Content from '../../components/Content';
+import icon from '../../assets/dominox.svg';
 
 function Dominox1() {
   const history = useHistory();
@@ -127,7 +128,7 @@ function Dominox1() {
       <Content>
         <S.Container>
           <S.Content>
-            <Header>DOMINOX</Header>
+            <Header src={icon}>DOMINOX</Header>
             <S.Words>
               <Paragraph>
                 Palavras:{' '}

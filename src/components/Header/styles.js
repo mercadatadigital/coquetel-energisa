@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Mainheader = styled.div`
   display: flex;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 
   justify-content: center;
   width: 100%;
@@ -16,4 +16,34 @@ export const Mainheader = styled.div`
 
   text-align: center;
   position: relative;
+
+  div.icon {
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+
+    img {
+      margin-left: 10px;
+      justify-self: flex-start;
+      height: 100%;
+      width: 20px;
+    }
+  }
+
+  div.text {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+
+  div.filler {
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+
+    img {
+      justify-self: flex-start;
+      width: 20px;
+    }
+  }
 `;

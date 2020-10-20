@@ -12,6 +12,7 @@ import Subtitle from '../../components/Subtitle';
 import TextBlue from '../../components/TextBlue';
 import Italic from '../../components/Italic';
 import Button from '../../components/Button';
+import icon from '../../assets/plus.svg';
 
 function Page1() {
   const history = useHistory();
@@ -24,7 +25,7 @@ function Page1() {
     <Container>
       <CircularButton onClick={() => goPage('/2')} direction="back" />
       <Content>
-        <Header>CAÇA-PALAVRAS</Header>
+        <Header src={icon}>CAÇA-PALAVRAS</Header>
         <S.Container>
           <Italic>
             Procure e marque, no diagrama de letras, as palavras em destaque no

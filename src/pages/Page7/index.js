@@ -36,6 +36,7 @@ import InputGame from '../../components/InputGame';
 import image from '../../assets/page7.png';
 import CircularButton from '../../components/CircularButton';
 import Subtitle from '../../components/Subtitle';
+import icon from '../../assets/codigosecreto.svg';
 
 function Page7() {
   const input1Ref = useRef();
@@ -92,7 +93,7 @@ function Page7() {
 
       <Content>
         <S.Content>
-          <Header>CÓDIGO SECRETO</Header>
+          <Header src={icon}>CÓDIGO SECRETO</Header>
           <Subtitle>Triângulo da Segurança</Subtitle>
 
           <S.Textimage>

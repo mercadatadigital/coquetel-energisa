@@ -50,7 +50,7 @@ export const Container = styled.div`
     left: 0;
     width: 100%;
     height: 160px;
-    background: ${({ theme }) => theme.palette.primary.main};
+    background: #d4d721;
     z-index: -1;
   }
 

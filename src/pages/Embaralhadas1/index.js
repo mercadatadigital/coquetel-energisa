@@ -11,6 +11,7 @@ import Italic from '../../components/Italic';
 import Button from '../../components/Button';
 
 import image from '../../assets/embaralhadas.png';
+import icon from '../../assets/star.svg';
 
 function Embaralhadas1() {
   const history = useHistory();
@@ -44,7 +45,7 @@ function Embaralhadas1() {
   return (
     <Container>
       <Content>
-        <Header>EMBARALHADAS</Header>
+        <Header src={icon}>EMBARALHADAS</Header>
         <S.Container>
           <Italic>
             Desembaralhe as sílabas e saiba o que deve haver entre empregadores

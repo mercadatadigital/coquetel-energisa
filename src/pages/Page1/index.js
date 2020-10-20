@@ -13,6 +13,7 @@ import Italic from '../../components/Italic';
 import InputGame from '../../components/InputGame';
 import image from '../../assets/page2.png';
 import CircularButton from '../../components/CircularButton';
+import icon from '../../assets/codigosecreto.svg';
 
 function Page1() {
   const history = useHistory();
@@ -25,7 +26,7 @@ function Page1() {
     <Container>
       <CircularButton onClick={() => goPage('/')} direction="back" />
       <Content>
-        <Header>CÓDIGO SECRETO</Header>
+        <Header src={icon}>CÓDIGO SECRETO</Header>
         <S.Textimage>
           <Paragraph>
             Uma empresa centenária, a Energisa é a quinta maior empresa em

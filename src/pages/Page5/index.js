@@ -12,6 +12,7 @@ import Subtitle from '../../components/Subtitle';
 import TextBlue from '../../components/TextBlue';
 import Italic from '../../components/Italic';
 import Button from '../../components/Button';
+import icon from '../../assets/star.svg';
 
 function Page5() {
   const history = useHistory();
@@ -24,7 +25,7 @@ function Page5() {
     <Container>
       <CircularButton onClick={() => goPage('/4')} direction="back" />
       <Content>
-        <Header>EMBARALHADAS</Header>
+        <Header src={icon}>EMBARALHADAS</Header>
         <S.Container>
           <Subtitle>Cultura de Segurança</Subtitle>
           <Subtitle>do Trabalho</Subtitle>

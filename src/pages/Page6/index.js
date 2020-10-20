@@ -25,6 +25,7 @@ import mopte from '../../assets/mopte.png';
 import palavras from '../../assets/palavras.png';
 import Subtitle from '../../components/Subtitle';
 import Italic from '../../components/Italic';
+import icon from '../../assets/star.svg';
 
 function Pagefour() {
   const history = useHistory();
@@ -105,7 +106,7 @@ function Pagefour() {
           <IoIosArrowBack />
         </CircularButton>
         <Content>
-          <Header>SIGA AS LINHAS</Header>
+          <Header src={icon}>SIGA AS LINHAS</Header>
           <Subtitle>Direção defensiva evita acidentes</Subtitle>
           <Paragraph>
             O motorista defensivo sabe que não tem domínio sobre as ações de

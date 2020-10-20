@@ -12,6 +12,7 @@ import Button from '../../components/Button';
 import Modal from '../../components/Modal';
 import Title from '../../components/Title';
 import TextGreen from '../../components/TextGreen';
+import icon from '../../assets/star.svg';
 
 // import Video from '../../assets/videos/encaixe.mp4';
 
@@ -104,7 +105,7 @@ function Pagesix() {
         </CircularButton>
         <Content>
           <S.Content>
-            <Header>ENCAIXE</Header>
+            <Header src={icon}>ENCAIXE</Header>
             <Subtitle>Home Office </Subtitle>
             <Paragraph>
               A pandemia do novo coronavírus trouxe novas orientações de

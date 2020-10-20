@@ -11,6 +11,7 @@ export const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #fbfbee;
+  text-align: left;
 `;
 
 export const BoxGame = styled.div`

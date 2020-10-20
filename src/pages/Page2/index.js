@@ -26,6 +26,7 @@ import InputGame from '../../components/InputGame';
 import image from '../../assets/page2.png';
 import CircularButton from '../../components/CircularButton';
 import { TextBlue } from '../../components/TextBlue/styles';
+import icon from '../../assets/codigosecreto.svg';
 
 function Page2() {
   const input1Ref = useRef();
@@ -71,7 +72,7 @@ function Page2() {
     <Container>
       <CircularButton onClick={() => goPage('/1')} direction="back" />
       <Content>
-        <Header>CÓDIGO SECRETO</Header>
+        <Header src={icon}>CÓDIGO SECRETO</Header>
 
         <Paragraph>
           Confira as dicas a seguir e desfrute de uma vida saudável:
