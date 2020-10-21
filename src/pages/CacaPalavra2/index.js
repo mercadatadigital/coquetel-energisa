@@ -14,8 +14,7 @@ import CacaPalavras from '../../components/CacaPalavras';
 
 import * as S from './styles';
 import Header from '../../components/Header';
-import CircularButton from '../../components/CircularButton';
-import Italic from '../../components/Italic';
+
 import icon from '../../assets/plus.svg';
 
 const words = [
@@ -75,10 +74,7 @@ function CacaPalavra2() {
           <S.Container>
             <S.Content>
               <Header src={icon}>CAÇA-PALAVRAS</Header>
-              <Italic>
-                Procure e marque, no diagrama de letras, as palavras em destaque
-                no texto.
-              </Italic>
+
               <br />
               <S.Words>
                 <Paragraph>

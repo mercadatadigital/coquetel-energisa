@@ -27,6 +27,10 @@ function Page9() {
       <Content>
         <Header src={icon}>CAÇA-PALAVRAS</Header>
         <S.Container>
+          <Italic>
+            Procure e marque, no diagrama de letras, as palavras em destaque no
+            texto.
+          </Italic>
           <Subtitle>Falando sobre DST</Subtitle>
 
           <Paragraph>

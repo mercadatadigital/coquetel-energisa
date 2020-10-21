@@ -7,22 +7,16 @@ import Header from '../../components/Header';
 import Content from '../../components/Content';
 import Paragraph from '../../components/Paragraph';
 import CircularButton from '../../components/CircularButton';
-import Button from '../../components/Button';
 import InputGame from '../../components/InputLines';
-import Modal from '../../components/Modal';
-import Title from '../../components/Title';
-import TextGreen from '../../components/TextGreen';
 
 // import Video from '../../assets/videos/sigaaslinhas.mp4';
 
 import * as S from './styles';
 
-import ilustra2 from '../../assets/04.png';
 import vreper from '../../assets/vreper.png';
 import oriepg from '../../assets/oriepg.png';
 import rgia from '../../assets/rgia.png';
 import mopte from '../../assets/mopte.png';
-import palavras from '../../assets/palavras.png';
 import Subtitle from '../../components/Subtitle';
 import Italic from '../../components/Italic';
 import icon from '../../assets/star.svg';

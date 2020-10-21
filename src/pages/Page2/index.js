@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import { FaUmbrella, FaPlane } from 'react-icons/fa';
+import { FaPlane } from 'react-icons/fa';
 import {
   GiSwirledShell,
   GiTargeted,
@@ -11,7 +11,7 @@ import {
 import { AiOutlineScissor, AiFillStar, AiFillHeart } from 'react-icons/ai';
 import { FcCellPhone } from 'react-icons/fc';
 import { GoMail } from 'react-icons/go';
-import { BiHeart, BiPencil, BiStar, BiSun } from 'react-icons/bi';
+import { BiSun } from 'react-icons/bi';
 import { ImPencil2 } from 'react-icons/im';
 import { BsSquareFill } from 'react-icons/bs';
 
@@ -23,7 +23,6 @@ import Header from '../../components/Header';
 import Paragraph from '../../components/Paragraph';
 import Italic from '../../components/Italic';
 import InputGame from '../../components/InputGame';
-import image from '../../assets/page2.png';
 import CircularButton from '../../components/CircularButton';
 import { TextBlue } from '../../components/TextBlue/styles';
 import icon from '../../assets/codigosecreto.svg';

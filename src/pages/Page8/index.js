@@ -8,10 +8,7 @@ import Content from '../../components/Content';
 import Paragraph from '../../components/Paragraph';
 import SelectImage from '../../components/SelectImage';
 import CircularButton from '../../components/CircularButton';
-import Button from '../../components/Button';
-import Modal from '../../components/Modal';
-import Title from '../../components/Title';
-import TextGreen from '../../components/TextGreen';
+
 import icon from '../../assets/star.svg';
 
 // import Video from '../../assets/videos/encaixe.mp4';

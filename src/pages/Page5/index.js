@@ -9,7 +9,7 @@ import Header from '../../components/Header';
 import Paragraph from '../../components/Paragraph';
 import CircularButton from '../../components/CircularButton';
 import Subtitle from '../../components/Subtitle';
-import TextBlue from '../../components/TextBlue';
+
 import Italic from '../../components/Italic';
 import Button from '../../components/Button';
 import icon from '../../assets/star.svg';

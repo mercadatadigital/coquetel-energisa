@@ -7,7 +7,6 @@ import Container from '../../components/Container';
 import Content from '../../components/Content';
 import Header from '../../components/Header';
 import Paragraph from '../../components/Paragraph';
-import Italic from '../../components/Italic';
 import Button from '../../components/Button';
 
 import image from '../../assets/embaralhadas.png';
@@ -33,7 +32,6 @@ function Embaralhadas1() {
     if (event.target.value === check) {
       const old = word;
       setWord(word + event.target.value);
-      console.log(word);
       ref.current.focus();
     }
   }
@@ -47,11 +45,11 @@ function Embaralhadas1() {
       <Content>
         <Header src={icon}>EMBARALHADAS</Header>
         <S.Container>
-          <Italic>
+          {/* <Italic>
             Desembaralhe as sílabas e saiba o que deve haver entre empregadores
             e empregados para se estabelecer uma cultura de segurança do
             trabalho em uma empresa.
-          </Italic>
+          </Italic> */}
           <S.Content>
             <img src={image} alt="embaralhadas" />
           </S.Content>

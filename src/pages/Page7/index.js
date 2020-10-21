@@ -1,25 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import {
-  FaUmbrella,
-  FaPlane,
-  FaCube,
-  FaRadiation,
-  FaVectorSquare,
-  FaPlus,
-} from 'react-icons/fa';
-import {
-  GiSwirledShell,
-  GiTargeted,
-  GiSpades,
-  GiScissors,
-  GiHouse,
-} from 'react-icons/gi';
-import { AiOutlineScissor, AiFillStar, AiFillHeart } from 'react-icons/ai';
-import { FcCellPhone } from 'react-icons/fc';
-import { GoArrowRight, GoArrowSmallRight, GoMail } from 'react-icons/go';
-import { BiDroplet, BiHeart, BiPencil, BiStar, BiSun } from 'react-icons/bi';
+import { FaCube, FaRadiation, FaVectorSquare, FaPlus } from 'react-icons/fa';
+import { GiHouse } from 'react-icons/gi';
+import { BiDroplet } from 'react-icons/bi';
 import { ImArrowRight, ImCross, ImPencil2 } from 'react-icons/im';
 import { BsCircleHalf, BsFillTriangleFill, BsSquareFill } from 'react-icons/bs';
 import { RiSendPlane2Fill } from 'react-icons/ri';
