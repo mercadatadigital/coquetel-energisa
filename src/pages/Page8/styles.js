@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { SCREEN_SIZES } from '../../utils';
 
 export const Content = styled.div`
   display: flex;
@@ -34,13 +35,23 @@ export const SameColor = styled.div`
 
 export const Retangle = styled.div`
   flex: 1;
-  min-width: 65px;
-  height: 40px;
+  min-width: 40px;
+  height: 30px;
   border: 4px solid ${(props) => props.color};
+
+  /* @media (min-width: ${SCREEN_SIZES.sm}) {
+    min-width: 48px;
+  } */
+
+  cursor: pointer;
+  transition: filter 0.2s;
+  :hover {
+    filter: brightness(70%);
+  }
 
   img.win-image {
     width: 100%;
-    /* min-height: 50px; */
+    min-height: 30px;
     display: none;
     background-color: #fff;
   }
@@ -49,6 +60,11 @@ export const Retangle = styled.div`
     err &&
     css`
       background-color: rgba(255, 0, 0, 0.5);
+      cursor: pointer;
+      transition: filter 0.2s;
+      :hover {
+        filter: brightness(90%);
+      }
     `}
 
   ${({ win }) =>

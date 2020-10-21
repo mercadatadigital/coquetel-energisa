@@ -100,479 +100,483 @@ function Page7() {
             texto acima
           </Italic>
 
-          <S.BoxGame>
-            <S.InputArea>
-              <BsCircleHalf color="darkblue" />
-              <InputGame value="a" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <RiSendPlane2Fill color="pink" />
-              <InputGame value="ç" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <FaPlus color="purple" />
-              <InputGame value="e" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <ImArrowRight color="lightblue" />
-              <InputGame value="f" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <BsSquareFill color="green" />
-              <InputGame value="g" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <BsFillTriangleFill color="lightblue" />
-              <InputGame value="i" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <FaCube color="orange" />
-              <InputGame value="l" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <GiHouse color="darkblue" />
-              <InputGame value="m" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <FaRadiation color="green" />
-              <InputGame value="n" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <TiThLargeOutline color="pink" />
-              <InputGame value="o" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <FaVectorSquare color="orange" />
-              <InputGame value="r" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <FaPlus color="purple" />
-              <InputGame value="s" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <ImCross color="lightblue" />
-              <InputGame value="t" disabled />
-            </S.InputArea>
-            <S.InputArea>
-              <BiDroplet color="orange" />
-              <InputGame value="v" disabled />
-            </S.InputArea>
-          </S.BoxGame>
+          <S.Game>
+            <S.BoxGame>
+              <S.InputArea>
+                <BsCircleHalf color="darkblue" />
+                <InputGame value="a" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <RiSendPlane2Fill color="pink" />
+                <InputGame value="ç" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <FaPlus color="purple" />
+                <InputGame value="e" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <ImArrowRight color="lightblue" />
+                <InputGame value="f" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <BsSquareFill color="green" />
+                <InputGame value="g" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <BsFillTriangleFill color="lightblue" />
+                <InputGame value="i" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <FaCube color="orange" />
+                <InputGame value="l" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <GiHouse color="darkblue" />
+                <InputGame value="m" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <FaRadiation color="green" />
+                <InputGame value="n" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <TiThLargeOutline color="pink" />
+                <InputGame value="o" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <FaVectorSquare color="orange" />
+                <InputGame value="r" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <FaPlus color="purple" />
+                <InputGame value="s" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <ImCross color="lightblue" />
+                <InputGame value="t" disabled />
+              </S.InputArea>
+              <S.InputArea>
+                <BiDroplet color="orange" />
+                <InputGame value="v" disabled />
+              </S.InputArea>
+            </S.BoxGame>
+          </S.Game>
 
-          <S.BoxGame>
-            <S.InputArea>
-              <BsFillTriangleFill color="lightblue" />
-              <InputGame
-                success={
-                  word[0] === ' ' || word[0] === ''
-                    ? null
-                    : RESULT[0] === word[0].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(0, input1Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <FaRadiation color="green" />
-              <InputGame
-                ref={input1Ref}
-                success={
-                  word[1] === ' ' || word[1] === ''
-                    ? null
-                    : RESULT[1] === word[1].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(1, input2Ref, event);
-                }}
-              />
-            </S.InputArea>
+          <S.Game>
+            <S.BoxGame>
+              <S.InputArea>
+                <BsFillTriangleFill color="lightblue" />
+                <InputGame
+                  success={
+                    word[0] === ' ' || word[0] === ''
+                      ? null
+                      : RESULT[0] === word[0].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(0, input1Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <FaRadiation color="green" />
+                <InputGame
+                  ref={input1Ref}
+                  success={
+                    word[1] === ' ' || word[1] === ''
+                      ? null
+                      : RESULT[1] === word[1].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(1, input2Ref, event);
+                  }}
+                />
+              </S.InputArea>
 
-            <S.InputArea>
-              <ImArrowRight color="lightblue" />
-              <InputGame
-                ref={input2Ref}
-                success={
-                  word[2] === ' ' || word[2] === ''
-                    ? null
-                    : RESULT[2] === word[2].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(2, input3Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <TiThLargeOutline color="pink" />
-              <InputGame
-                ref={input3Ref}
-                success={
-                  word[3] === ' ' || word[3] === ''
-                    ? null
-                    : RESULT[3] === word[3].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(3, input4Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <FaVectorSquare color="orange" />
-              <InputGame
-                ref={input4Ref}
-                success={
-                  word[4] === ' ' || word[4] === ''
-                    ? null
-                    : RESULT[4] === word[4].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(4, input5Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <GiHouse color="darkblue" />
-              <InputGame
-                ref={input5Ref}
-                success={
-                  word[5] === ' ' || word[5] === ''
-                    ? null
-                    : RESULT[5] === word[5].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(5, input6Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <BsCircleHalf color="darkblue" />
-              <InputGame
-                ref={input6Ref}
-                success={
-                  word[6] === ' ' || word[6] === ''
-                    ? null
-                    : RESULT[6] === word[6].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(6, input7Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <RiSendPlane2Fill color="pink" />
-              <InputGame
-                ref={input7Ref}
-                success={
-                  word[7] === ' ' || word[7] === ''
-                    ? null
-                    : RESULT[7] === word[7].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(7, input8Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <BsCircleHalf color="darkblue" />
-              <InputGame
-                ref={input8Ref}
-                success={
-                  word[8] === ' ' || word[8] === ''
-                    ? null
-                    : RESULT[8] === word[8].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(8, input9Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <TiThLargeOutline color="pink" />
-              <InputGame
-                ref={input9Ref}
-                success={
-                  word[9] === ' ' || word[9] === ''
-                    ? null
-                    : RESULT[9] === word[9].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(9, input10Ref, event);
-                }}
-              />
-            </S.InputArea>
-          </S.BoxGame>
+              <S.InputArea>
+                <ImArrowRight color="lightblue" />
+                <InputGame
+                  ref={input2Ref}
+                  success={
+                    word[2] === ' ' || word[2] === ''
+                      ? null
+                      : RESULT[2] === word[2].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(2, input3Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <TiThLargeOutline color="pink" />
+                <InputGame
+                  ref={input3Ref}
+                  success={
+                    word[3] === ' ' || word[3] === ''
+                      ? null
+                      : RESULT[3] === word[3].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(3, input4Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <FaVectorSquare color="orange" />
+                <InputGame
+                  ref={input4Ref}
+                  success={
+                    word[4] === ' ' || word[4] === ''
+                      ? null
+                      : RESULT[4] === word[4].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(4, input5Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <GiHouse color="darkblue" />
+                <InputGame
+                  ref={input5Ref}
+                  success={
+                    word[5] === ' ' || word[5] === ''
+                      ? null
+                      : RESULT[5] === word[5].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(5, input6Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <BsCircleHalf color="darkblue" />
+                <InputGame
+                  ref={input6Ref}
+                  success={
+                    word[6] === ' ' || word[6] === ''
+                      ? null
+                      : RESULT[6] === word[6].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(6, input7Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <RiSendPlane2Fill color="pink" />
+                <InputGame
+                  ref={input7Ref}
+                  success={
+                    word[7] === ' ' || word[7] === ''
+                      ? null
+                      : RESULT[7] === word[7].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(7, input8Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <BsCircleHalf color="darkblue" />
+                <InputGame
+                  ref={input8Ref}
+                  success={
+                    word[8] === ' ' || word[8] === ''
+                      ? null
+                      : RESULT[8] === word[8].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(8, input9Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <TiThLargeOutline color="pink" />
+                <InputGame
+                  ref={input9Ref}
+                  success={
+                    word[9] === ' ' || word[9] === ''
+                      ? null
+                      : RESULT[9] === word[9].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(9, input10Ref, event);
+                  }}
+                />
+              </S.InputArea>
+            </S.BoxGame>
 
-          <S.BoxGame>
-            <S.InputArea>
-              <ImArrowRight color="lightblue" />
-              <InputGame
-                ref={input10Ref}
-                success={
-                  word[10] === ' ' || word[10] === ''
-                    ? null
-                    : RESULT[10] === word[10].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(10, input11Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <FaRadiation color="green" />
-              <InputGame
-                ref={input11Ref}
-                success={
-                  word[11] === ' ' || word[11] === ''
-                    ? null
-                    : RESULT[11] === word[11].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(11, input12Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <BiDroplet color="orange" />
-              <InputGame
-                ref={input12Ref}
-                success={
-                  word[12] === ' ' || word[12] === ''
-                    ? null
-                    : RESULT[12] === word[12].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(12, input13Ref, event);
-                }}
-              />
-            </S.InputArea>
+            <S.BoxGame>
+              <S.InputArea>
+                <ImArrowRight color="lightblue" />
+                <InputGame
+                  ref={input10Ref}
+                  success={
+                    word[10] === ' ' || word[10] === ''
+                      ? null
+                      : RESULT[10] === word[10].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(10, input11Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <FaRadiation color="green" />
+                <InputGame
+                  ref={input11Ref}
+                  success={
+                    word[11] === ' ' || word[11] === ''
+                      ? null
+                      : RESULT[11] === word[11].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(11, input12Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <BiDroplet color="orange" />
+                <InputGame
+                  ref={input12Ref}
+                  success={
+                    word[12] === ' ' || word[12] === ''
+                      ? null
+                      : RESULT[12] === word[12].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(12, input13Ref, event);
+                  }}
+                />
+              </S.InputArea>
 
-            <S.InputArea>
-              <ImPencil2 color="orange" />
-              <InputGame
-                ref={input13Ref}
-                success={
-                  word[13] === ' ' || word[13] === ''
-                    ? null
-                    : RESULT[13] === word[13].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(13, input14Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <FaPlus color="purple" />
-              <InputGame
-                ref={input14Ref}
-                success={
-                  word[14] === ' ' || word[14] === ''
-                    ? null
-                    : RESULT[14] === word[14].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(14, input15Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <ImCross color="lightblue" />
-              <InputGame
-                ref={input15Ref}
-                success={
-                  word[15] === ' ' || word[15] === ''
-                    ? null
-                    : RESULT[15] === word[15].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(15, input16Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <BsFillTriangleFill color="lightblue" />
-              <InputGame
-                ref={input16Ref}
-                success={
-                  word[16] === ' ' || word[16] === ''
-                    ? null
-                    : RESULT[16] === word[16].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(16, input17Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <BsSquareFill color="green" />
-              <InputGame
-                ref={input17Ref}
-                success={
-                  word[17] === ' ' || word[17] === ''
-                    ? null
-                    : RESULT[17] === word[17].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(17, input18Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <BsCircleHalf color="darkblue" />
-              <InputGame
-                ref={input18Ref}
-                success={
-                  word[18] === ' ' || word[18] === ''
-                    ? null
-                    : RESULT[18] === word[18].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(18, input19Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <RiSendPlane2Fill color="pink" />
-              <InputGame
-                ref={input19Ref}
-                success={
-                  word[19] === ' ' || word[19] === ''
-                    ? null
-                    : RESULT[19] === word[19].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(19, input20Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <BsCircleHalf color="darkblue" />
-              <InputGame
-                ref={input20Ref}
-                success={
-                  word[20] === ' ' || word[20] === ''
-                    ? null
-                    : RESULT[20] === word[20].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(20, input21Ref, event);
-                }}
-              />
-            </S.InputArea>
-            <S.InputArea>
-              <TiThLargeOutline color="pink" />
-              <InputGame
-                ref={input21Ref}
-                success={
-                  word[21] === ' ' || word[21] === ''
-                    ? null
-                    : RESULT[21] === word[21].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(21, input22Ref, event);
-                }}
-              />
-            </S.InputArea>
-          </S.BoxGame>
-          <S.BoxGame>
-            <S.InputArea>
-              <BsCircleHalf color="darkblue" />
-              <InputGame
-                ref={input22Ref}
-                success={
-                  word[22] === ' ' || word[22] === ''
-                    ? null
-                    : RESULT[22] === word[22].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(22, input23Ref, event);
-                }}
-              />
-            </S.InputArea>{' '}
-            <S.InputArea>
-              <FaRadiation color="green" />
-              <InputGame
-                ref={input23Ref}
-                success={
-                  word[23] === ' ' || word[23] === ''
-                    ? null
-                    : RESULT[23] === word[23].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(23, input24Ref, event);
-                }}
-              />
-            </S.InputArea>{' '}
-            <S.InputArea>
-              <BsCircleHalf color="darkblue" />
-              <InputGame
-                ref={input24Ref}
-                success={
-                  word[24] === ' ' || word[24] === ''
-                    ? null
-                    : RESULT[24] === word[24].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(24, input25Ref, event);
-                }}
-              />
-            </S.InputArea>{' '}
-            <S.InputArea>
-              <FaVectorSquare color="orange" />
-              <InputGame
-                ref={input25Ref}
-                success={
-                  word[25] === ' ' || word[25] === ''
-                    ? null
-                    : RESULT[25] === word[25].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(25, input26Ref, event);
-                }}
-              />
-            </S.InputArea>{' '}
-            <S.InputArea>
-              <BsFillTriangleFill color="lightblue" />
-              <InputGame
-                ref={input26Ref}
-                success={
-                  word[26] === ' ' || word[26] === ''
-                    ? null
-                    : RESULT[26] === word[26].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(26, input27Ref, event);
-                }}
-              />
-            </S.InputArea>{' '}
-            <S.InputArea>
-              <FaPlus color="purple" />
-              <InputGame
-                ref={input27Ref}
-                success={
-                  word[27] === ' ' || word[27] === ''
-                    ? null
-                    : RESULT[27] === word[27].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(27, input28Ref, event);
-                }}
-              />
-            </S.InputArea>{' '}
-            <S.InputArea>
-              <ImPencil2 color="orange" />
-              <InputGame
-                ref={input28Ref}
-                success={
-                  word[28] === ' ' || word[28] === ''
-                    ? null
-                    : RESULT[28] === word[28].toLowerCase()
-                }
-                onChange={(event) => {
-                  validate(28, input28Ref, event);
-                }}
-              />
-            </S.InputArea>
-          </S.BoxGame>
+              <S.InputArea>
+                <ImPencil2 color="orange" />
+                <InputGame
+                  ref={input13Ref}
+                  success={
+                    word[13] === ' ' || word[13] === ''
+                      ? null
+                      : RESULT[13] === word[13].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(13, input14Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <FaPlus color="purple" />
+                <InputGame
+                  ref={input14Ref}
+                  success={
+                    word[14] === ' ' || word[14] === ''
+                      ? null
+                      : RESULT[14] === word[14].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(14, input15Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <ImCross color="lightblue" />
+                <InputGame
+                  ref={input15Ref}
+                  success={
+                    word[15] === ' ' || word[15] === ''
+                      ? null
+                      : RESULT[15] === word[15].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(15, input16Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <BsFillTriangleFill color="lightblue" />
+                <InputGame
+                  ref={input16Ref}
+                  success={
+                    word[16] === ' ' || word[16] === ''
+                      ? null
+                      : RESULT[16] === word[16].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(16, input17Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <BsSquareFill color="green" />
+                <InputGame
+                  ref={input17Ref}
+                  success={
+                    word[17] === ' ' || word[17] === ''
+                      ? null
+                      : RESULT[17] === word[17].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(17, input18Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <BsCircleHalf color="darkblue" />
+                <InputGame
+                  ref={input18Ref}
+                  success={
+                    word[18] === ' ' || word[18] === ''
+                      ? null
+                      : RESULT[18] === word[18].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(18, input19Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <RiSendPlane2Fill color="pink" />
+                <InputGame
+                  ref={input19Ref}
+                  success={
+                    word[19] === ' ' || word[19] === ''
+                      ? null
+                      : RESULT[19] === word[19].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(19, input20Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <BsCircleHalf color="darkblue" />
+                <InputGame
+                  ref={input20Ref}
+                  success={
+                    word[20] === ' ' || word[20] === ''
+                      ? null
+                      : RESULT[20] === word[20].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(20, input21Ref, event);
+                  }}
+                />
+              </S.InputArea>
+              <S.InputArea>
+                <TiThLargeOutline color="pink" />
+                <InputGame
+                  ref={input21Ref}
+                  success={
+                    word[21] === ' ' || word[21] === ''
+                      ? null
+                      : RESULT[21] === word[21].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(21, input22Ref, event);
+                  }}
+                />
+              </S.InputArea>
+            </S.BoxGame>
+            <S.BoxGame>
+              <S.InputArea>
+                <BsCircleHalf color="darkblue" />
+                <InputGame
+                  ref={input22Ref}
+                  success={
+                    word[22] === ' ' || word[22] === ''
+                      ? null
+                      : RESULT[22] === word[22].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(22, input23Ref, event);
+                  }}
+                />
+              </S.InputArea>{' '}
+              <S.InputArea>
+                <FaRadiation color="green" />
+                <InputGame
+                  ref={input23Ref}
+                  success={
+                    word[23] === ' ' || word[23] === ''
+                      ? null
+                      : RESULT[23] === word[23].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(23, input24Ref, event);
+                  }}
+                />
+              </S.InputArea>{' '}
+              <S.InputArea>
+                <BsCircleHalf color="darkblue" />
+                <InputGame
+                  ref={input24Ref}
+                  success={
+                    word[24] === ' ' || word[24] === ''
+                      ? null
+                      : RESULT[24] === word[24].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(24, input25Ref, event);
+                  }}
+                />
+              </S.InputArea>{' '}
+              <S.InputArea>
+                <FaVectorSquare color="orange" />
+                <InputGame
+                  ref={input25Ref}
+                  success={
+                    word[25] === ' ' || word[25] === ''
+                      ? null
+                      : RESULT[25] === word[25].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(25, input26Ref, event);
+                  }}
+                />
+              </S.InputArea>{' '}
+              <S.InputArea>
+                <BsFillTriangleFill color="lightblue" />
+                <InputGame
+                  ref={input26Ref}
+                  success={
+                    word[26] === ' ' || word[26] === ''
+                      ? null
+                      : RESULT[26] === word[26].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(26, input27Ref, event);
+                  }}
+                />
+              </S.InputArea>{' '}
+              <S.InputArea>
+                <FaPlus color="purple" />
+                <InputGame
+                  ref={input27Ref}
+                  success={
+                    word[27] === ' ' || word[27] === ''
+                      ? null
+                      : RESULT[27] === word[27].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(27, input28Ref, event);
+                  }}
+                />
+              </S.InputArea>{' '}
+              <S.InputArea>
+                <ImPencil2 color="orange" />
+                <InputGame
+                  ref={input28Ref}
+                  success={
+                    word[28] === ' ' || word[28] === ''
+                      ? null
+                      : RESULT[28] === word[28].toLowerCase()
+                  }
+                  onChange={(event) => {
+                    validate(28, input28Ref, event);
+                  }}
+                />
+              </S.InputArea>
+            </S.BoxGame>
+          </S.Game>
         </S.Content>
       </Content>
 

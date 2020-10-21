@@ -26,6 +26,7 @@ import InputGame from '../../components/InputGame';
 import CircularButton from '../../components/CircularButton';
 import { TextBlue } from '../../components/TextBlue/styles';
 import icon from '../../assets/codigosecreto.svg';
+import Button from '../../components/Button';
 
 function Page2() {
   const input1Ref = useRef();
@@ -50,6 +51,7 @@ function Page2() {
 
   const RESULT = 'longevidadeestresse';
   const [word, setWord] = useState('___________________');
+  const [displayWord, setDisplayWord] = useState('___________________');
 
   function validate(idx, ref, event) {
     if (event.target.value.length <= 0 || !ref.current) {
@@ -58,6 +60,13 @@ function Page2() {
     setWord(
       word.substring(0, idx) + event.target.value + word.substring(idx + 1)
     );
+
+    if (event.target.value === RESULT[idx])
+      setDisplayWord(
+        displayWord.substring(0, idx) +
+          event.target.value +
+          displayWord.substring(idx + 1)
+      );
     ref.current.focus();
   }
 
@@ -69,7 +78,6 @@ function Page2() {
 
   return (
     <Container>
-      <CircularButton onClick={() => goPage('/1')} direction="back" />
       <Content>
         <Header src={icon}>CÓDIGO SECRETO</Header>
 
@@ -86,9 +94,11 @@ function Page2() {
         </Paragraph>
         <Paragraph>
           <S.Bullet>•</S.Bullet> Pratique atividades físicas, elas são
-          fundamentais para promover condicionamento, aumentar a 1
-          <TextBlue> {word.substring(0, 11)}</TextBlue> e diminuir o 2{' '}
-          <TextBlue>{word.substring(11, 19)}</TextBlue>.
+          fundamentais para promover condicionamento, aumentar a{' '}
+          <S.NumberSmall>1</S.NumberSmall>
+          <TextBlue> {displayWord.substring(0, 11)}</TextBlue> e diminuir o{' '}
+          <S.NumberSmall>2</S.NumberSmall>{' '}
+          <TextBlue>{displayWord.substring(11, 19)}</TextBlue>.
         </Paragraph>
         <Paragraph>
           <S.Bullet>•</S.Bullet> Procure informação e ajuda para parar de fumar
@@ -426,8 +436,9 @@ function Page2() {
             />
           </S.InputArea>
         </S.BoxGame>
+
+        <Button onClick={() => goPage('1')}>Voltar</Button>
       </Content>
-      <CircularButton onClick={() => goPage('3')} />
     </Container>
   );
 }

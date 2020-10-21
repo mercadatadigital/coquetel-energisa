@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
+import { FaCheck } from 'react-icons/fa';
 import * as S from './styles';
 
 import Container from '../../components/Container';
@@ -30,8 +31,8 @@ function Embaralhadas1() {
 
   function validate(ref, event, check) {
     if (event.target.value === check) {
-      const old = word;
       setWord(word + event.target.value);
+      console.log(word);
       ref.current.focus();
     }
   }
@@ -111,6 +112,11 @@ function Embaralhadas1() {
               maxLength={2}
               onChange={(event) => validate(input7Ref, event, 'ça')}
             />
+            {word === RESULT ? (
+              <FaCheck className="checkmarck" color="#0097c1" />
+            ) : (
+              <></>
+            )}
           </S.Inputs>
           <Button last onClick={() => goPage('5')}>
             Voltar

@@ -2,12 +2,17 @@ import React, { forwardRef } from 'react';
 
 import * as S from './styles';
 
+function handleFocus(event) {
+  event.target.select();
+}
+
 function DominoxInput(
   { value, disable, onChange, success, invisible, complete },
   ref
 ) {
   return (
     <S.Input
+      onFocus={handleFocus}
       value={value}
       complete={complete}
       invisible={invisible}

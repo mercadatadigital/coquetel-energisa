@@ -14,6 +14,7 @@ import InputGame from '../../components/InputGame';
 import image from '../../assets/page2.png';
 import CircularButton from '../../components/CircularButton';
 import icon from '../../assets/codigosecreto.svg';
+import Button from '../../components/Button';
 
 function Page1() {
   const history = useHistory();
@@ -48,8 +49,11 @@ function Page1() {
             acomete um a cada dois adultos e uma a cada três crianças.
           </Paragraph>
         </S.Textimage>
+        <Button last onClick={() => goPage('2')}>
+          Jogar!
+        </Button>
       </Content>
-      <CircularButton onClick={() => goPage('2')} />
+      <CircularButton onClick={() => goPage('3')} />
     </Container>
   );
 }

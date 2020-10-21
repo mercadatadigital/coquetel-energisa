@@ -125,7 +125,7 @@ function Pagesix() {
             </Italic>
 
             <S.Image>
-              <img src={ilustra1} alt="Salão de cabelereiro" />
+              <img src={ilustra1} alt="atendente" />
             </S.Image>
             <S.Buttons>
               <SelectImage

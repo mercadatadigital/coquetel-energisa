@@ -13,9 +13,10 @@ export const Input = styled.input.attrs((props) => ({
   text-transform: uppercase;
   font-weight: bold;
   outline: none;
+  border-radius: 0;
 
   border: ${({ disable, invisible, theme }) =>
-    disable || invisible ? 'none' : `1px solid ${theme.palette.primary.light}`};
+    disable || invisible ? 'none' : `1px solid black`};
   color: ${({ theme, disable }) =>
     disable ? '#fff' : theme.palette.primary.main};
 
@@ -32,5 +33,5 @@ export const Input = styled.input.attrs((props) => ({
     return 'background-color: rgba(255, 0, 0, .2);';
   }};
 
-  background: ${({ disable }) => disable && '#88B9D4'};
+  background: ${({ disable }) => disable && '#fbfbee'};
 `;

@@ -94,9 +94,8 @@ function CacaPalavra2() {
                     {renderWord('filhos', 'filhos')},{' '}
                     {renderWord('cancer', 'câncer')},{' '}
                     {renderWord('sugestoes', 'sugestões')},{' '}
-                    {renderWord('remedio', 'remédios')},{' '}
+                    {renderWord('remedio', 'remédios')}{' '}
                   </span>
-                  .
                 </Paragraph>
                 {loading ? (
                   <S.Loading loading>

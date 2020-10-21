@@ -23,7 +23,7 @@ function Page1() {
 
   return (
     <Container>
-      <CircularButton onClick={() => goPage('/2')} direction="back" />
+      <CircularButton onClick={() => goPage('/1')} direction="back" />
       <Content>
         <Header src={icon}>CAÇA-PALAVRAS</Header>
         <S.Container>

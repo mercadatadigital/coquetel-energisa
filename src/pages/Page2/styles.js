@@ -41,12 +41,26 @@ export const Bullet = styled.span`
 `;
 
 export const Number = styled.span`
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   background-color: ${({ theme }) => theme.palette.primary.main};
   border-radius: 50%;
   height: 20px;
   width: 20px;
   color: white;
+  text-align: center;
+  margin-bottom: 3px;
+`;
+
+export const NumberSmall = styled.span`
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: ${({ theme }) => theme.palette.primary.main};
+  border-radius: 60%;
+  color: white;
+  text-align: center;
+  margin-bottom: 3px;
+  padding: 2px 5px 2px 5px;
 `;

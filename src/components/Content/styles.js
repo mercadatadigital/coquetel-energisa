@@ -8,6 +8,11 @@ export const Maincontent = styled.div`
   color: ${({ theme }) => theme.palette.secondary.main};
   display: flex;
   flex-direction: column;
+
   padding: 10px;
   margin: 0 10px;
+  min-height: 560px;
+
+  /* max-height: 560px; */
+  background: linear-gradient(0deg, #fff 97%, #d4d721 3%);
 `;

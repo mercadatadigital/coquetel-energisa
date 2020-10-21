@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { SCREEN_SIZES } from '../../utils';
 
 export const Content = styled.div`
   display: flex;
@@ -7,13 +8,23 @@ export const Content = styled.div`
   flex-direction: column;
 `;
 
+export const Game = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfbee;
+  width: 100%;
+  margin-bottom: 10px;
+`;
 export const BoxGame = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 10px;
-  background: #fbfbee;
-  width: 100%;
+  padding: 5px;
+  /* background: red; */
+  /* #fbfbee */
+  /* width: 80%; */
   margin-bottom: 10px;
 
   &:last-child {
@@ -26,7 +37,11 @@ export const InputArea = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 5px;
+  margin-left: 2px;
+
+  @media (min-width: ${SCREEN_SIZES.sm}) {
+    margin-left: 2px;
+  }
 
   &:first-child {
     margin: 0;

@@ -94,9 +94,8 @@ function CacaPalavra1() {
                     {renderWord('imagem', 'imagem')},{' '}
                     {renderWord('seguranca', 'segurança')},{' '}
                     {renderWord('atividade', 'atividade')},{' '}
-                    {renderWord('gravidade', 'gravidade')},{' '}
+                    {renderWord('gravidade', 'gravidade')}
                   </span>
-                  .
                 </Paragraph>
                 {loading ? (
                   <S.Loading loading>
