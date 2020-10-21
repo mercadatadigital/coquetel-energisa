@@ -82,7 +82,7 @@ function Embaralhadas1() {
               maxLength={3}
               onChange={(event) => validate(input4Ref, event, 'cia')}
             />
-            <Paragraph>E</Paragraph>
+            <p>E</p>
             <S.Input
               ref={input4Ref}
               background="#eff5ed"

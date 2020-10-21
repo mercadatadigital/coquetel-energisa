@@ -28,6 +28,10 @@ export const Inputs = styled.div`
   margin-left: 50px;
   color: black;
   gap: 5px;
+
+  p {
+    font-weight: bold;
+  }
 `;
 
 export const Input = styled.input`

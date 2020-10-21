@@ -51,6 +51,9 @@ export const Textimage = styled.div`
 `;
 
 export const Bullet = styled.span`
+  align-items: center;
+  font-size: 15px;
+  text-align: center;
   color: ${({ theme }) => theme.palette.primary.main};
 `;
 

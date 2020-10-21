@@ -34,6 +34,7 @@ export const Mainheader = styled.div`
     display: flex;
     justify-content: center;
     width: 60%;
+    font-family: 'Londrina Outline', cursive;
   }
 
   div.filler {

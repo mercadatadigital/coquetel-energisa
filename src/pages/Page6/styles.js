@@ -3,6 +3,13 @@ import { InputGame } from '../../components/InputGame/styles';
 
 export const Input = styled(InputGame)``;
 
+export const Header = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Content = styled.div`
   display: grid;
   grid-template-columns: 144px 50px 144px;
@@ -15,6 +22,11 @@ export const Content = styled.div`
     color: black;
     font-size: 10px;
   }
+
+  p.bold {
+    font-weight: bold;
+    font-size: 13px;
+  }
   div.vreper {
     display: display;
     flex-direction: column;
@@ -25,7 +37,7 @@ export const Content = styled.div`
       justify-content: flex-start;
       align-items: center;
       /* margin-bottom: 15px; */
-      margin-left: 5px;
+      margin-left: 4px;
 
       li {
         margin: 0 2px;
@@ -44,7 +56,7 @@ export const Content = styled.div`
       justify-content: flex-start;
       align-items: center;
       /* margin-bottom: 15px; */
-      margin-left: 5px;
+      margin-left: 8px;
 
       li {
         margin: 0 2px;
@@ -68,7 +80,7 @@ export const Image2 = styled.div`
   margin: 15px auto 0;
 
   img {
-    height: 118px;
+    height: 130px;
   }
 `;
 

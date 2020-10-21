@@ -11,6 +11,8 @@ import ParagraphList from '../../components/ParagraphList';
 import CircularButton from '../../components/CircularButton';
 import Subtitle from '../../components/Subtitle';
 import TextBlue from '../../components/TextBlue';
+import TextBlueSmall from '../../components/TextBlueSmall';
+
 import Italic from '../../components/Italic';
 import Button from '../../components/Button';
 import icon from '../../assets/dominox.svg';
@@ -43,32 +45,59 @@ function Page4() {
             colaborador deve fazer bom uso dos equipamentos cumprindo todas as
             orientações sobre a utilização adequada do EPI.
           </Paragraph>
+          <br />
           <S.Content>
             <ParagraphList>
               Tipos de EPCs:
-              <br />• Extintor, mangueira e <TextBlue>HIDRANTE</TextBlue>;
-              <br />• <TextBlue>CAPELA</TextBlue> Química (exaustor de vapores e
-              gases tóxicos);
-              <br />• Lava-olhos e chuveiros de emergência;
-              <br />• <TextBlue>EXAUSTORES</TextBlue>, sistemas de ventilação e
-              controle de temperatura;
-              <br />• Corrimão, guarda-corpos e redes de proteção;
-              <br />• Isolação acústica;
-              <br />• Sinalizações de segurança, como: cones, cavaletes, placas
-              de aviso, sinalização de saída de emergência.
+              <div className="margin">
+                <S.Bullet>•</S.Bullet> Extintor, mangueira e{' '}
+                <TextBlueSmall>HIDRANTE</TextBlueSmall>;
+                <br />
+                <S.Bullet>• </S.Bullet>
+                <TextBlueSmall>CAPELA</TextBlueSmall> Química (exaustor de
+                vapores e gases tóxicos);
+                <br />
+                <S.Bullet>•</S.Bullet> Lava-olhos e chuveiros de emergência;
+                <br />
+                <S.Bullet>•</S.Bullet> <TextBlueSmall>EXAUSTORES</TextBlueSmall>
+                , sistemas de ventilação e controle de temperatura;
+                <br />
+                <S.Bullet>•</S.Bullet> Corrimão, guarda-corpos e redes de
+                proteção;
+                <br />
+                <S.Bullet>•</S.Bullet> Isolação acústica;
+                <br />
+                <S.Bullet>•</S.Bullet> Sinalizações de segurança, como: cones,
+                cavaletes, placas de aviso, sinalização de saída de emergência.
+              </div>
             </ParagraphList>
             <ParagraphList>
               Tipos de EPIs:
-              <br />• <TextBlue>CAPACETE</TextBlue>;
-              <br />• Protetor e ABAFADOR de ouvido;
-              <br />• <TextBlue>MÁSCARA</TextBlue> filtrante para gases e
-              aerossóis, <TextBlue>RESPIRADOR </TextBlue>
-              facial e semifacial, óculos e viseiras;
-              <br />• <TextBlue>LUVAS</TextBlue>, braçadeiras e mangotes;
-              <br />• <TextBlue>SAPATO</TextBlue>, bota e coturno;
-              <br />• <TextBlue>CINTO</TextBlue> de segurança, arnês (armadura)
-              e sistemas antiquedas;
-              <br />• <TextBlue>COLETE</TextBlue> e avental.
+              <div className="margin">
+                <S.Bullet>•</S.Bullet> <TextBlueSmall>CAPACETE</TextBlueSmall>;
+                <br />
+                <S.Bullet>•</S.Bullet> Protetor e ABAFADOR de ouvido;
+                <br />
+                <S.Bullet>
+                  •
+                </S.Bullet> <TextBlueSmall>MÁSCARA</TextBlueSmall> filtrante
+                para gases e aerossóis,{' '}
+                <TextBlueSmall>RESPIRADOR </TextBlueSmall>
+                facial e semifacial, óculos e viseiras;
+                <br />
+                <S.Bullet>•</S.Bullet> <TextBlueSmall>LUVAS</TextBlueSmall>,
+                braçadeiras e mangotes;
+                <br />
+                <S.Bullet>•</S.Bullet> <TextBlueSmall>SAPATO</TextBlueSmall>,
+                bota e coturno;
+                <br />
+                <S.Bullet>•</S.Bullet> <TextBlueSmall>CINTO</TextBlueSmall> de
+                segurança, arnês (armadura) e sistemas antiquedas;
+                <br />
+                <S.Bullet>
+                  •
+                </S.Bullet> <TextBlueSmall>COLETE</TextBlueSmall> e avental.
+              </div>
             </ParagraphList>
           </S.Content>
           <Button last onClick={() => goPage('dominox1')}>

@@ -4,6 +4,6 @@ export const TextBlue = styled.span`
   color: ${({ theme }) => theme.palette.primary.main};
   font-weight: 600;
   line-height: 1.5;
-  font-size: 12px;
+  font-size: 11px;
   font-style: normal;
 `;

@@ -23,6 +23,7 @@ export const Retangles = styled.div`
   width: 100%;
   display: flex;
   margin: 5px auto;
+  margin-top: 20px;
 `;
 
 export const SameColor = styled.div`
@@ -33,13 +34,13 @@ export const SameColor = styled.div`
 
 export const Retangle = styled.div`
   flex: 1;
-  max-width: 75px;
-  height: 50px;
+  min-width: 65px;
+  height: 40px;
   border: 4px solid ${(props) => props.color};
 
   img.win-image {
     width: 100%;
-    min-height: 50px;
+    /* min-height: 50px; */
     display: none;
     background-color: #fff;
   }

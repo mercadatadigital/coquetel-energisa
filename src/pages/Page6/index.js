@@ -100,21 +100,24 @@ function Pagefour() {
           <IoIosArrowBack />
         </CircularButton>
         <Content>
-          <Header src={icon}>SIGA AS LINHAS</Header>
-          <Subtitle>Direção defensiva evita acidentes</Subtitle>
-          <Paragraph>
-            O motorista defensivo sabe que não tem domínio sobre as ações de
-            outros condutores ou pedestres, nem sobre as condições do tempo e
-            das estradas. Assim, sabe da importancia de adotar a prática
-            defensiva para garantir sua proteção. Sabe e respeita as leis de
-            trânsito, usa sempre o cinto de segurança, conhece e mantém em boas
-            condições o seu veículo e não dirige cansado ou sob efeito de álcool
-            ou drogas.
-          </Paragraph>
-          <Italic>
-            Leve as linhas aos espaços em branco e descubra qual é o método
-            básico da prevenção de acidentes no trânsito.
-          </Italic>
+          <S.Header>
+            <Header src={icon}>SIGA AS LINHAS</Header>
+            <Subtitle>Direção defensiva evita acidentes</Subtitle>
+            <Paragraph>
+              O motorista defensivo sabe que não tem domínio sobre as ações de
+              outros condutores ou pedestres, nem sobre as condições do tempo e
+              das estradas. Assim, sabe da importancia de adotar a prática
+              defensiva para garantir sua proteção. Sabe e respeita as leis de
+              trânsito, usa sempre o cinto de segurança, conhece e mantém em
+              boas condições o seu veículo e não dirige cansado ou sob efeito de
+              álcool ou drogas.
+            </Paragraph>
+            <Italic>
+              Leve as linhas aos espaços em branco e descubra qual é o método
+              básico da prevenção de acidentes no trânsito.
+            </Italic>
+          </S.Header>
+
           <br />
           <S.Content>
             <div className="vreper">
@@ -201,7 +204,7 @@ function Pagefour() {
                 </li>
               </div>
             </div>
-            <p>O</p>
+            <p className="bold">O</p>
             <div className="vreper">
               <S.Image2>
                 <img src={oriepg} alt="" />
@@ -346,7 +349,7 @@ function Pagefour() {
                 </li>
               </div>
             </div>
-            <p>A</p>
+            <p className="bold">A</p>
             <div className="vreper">
               <S.Image2>
                 <img src={mopte} alt="" />
