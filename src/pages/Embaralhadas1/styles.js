@@ -30,31 +30,44 @@ export const Inputs = styled.div`
   margin-left: 50px;
   margin-bottom: 20px;
   color: black;
-  gap: 5px;
+  gap: 10px;
 
   p {
     font-weight: bold;
   }
 `;
 
-export const Input = styled.input`
+export const Input = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 40px;
-  outline: none;
-  border: none;
+
   border-bottom: 3px solid ${({ border }) => border};
   line-height: 0;
   background: ${({ background }) => background};
-  padding: 5px;
-  padding-top: 20px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: ${({ border }) => border};
 
   :focus {
     filter: brightness(95%);
+  }
+
+  input {
+    margin-top: 5px;
+    max-width: 60px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: ${({ border }) => border};
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+
+  svg {
+    visibility: ${({ win }) => (win ? 'visible' : 'hidden')};
   }
 `;
 

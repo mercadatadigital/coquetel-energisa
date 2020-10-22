@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import { FaCheck } from 'react-icons/fa';
@@ -27,7 +27,6 @@ function Embaralhadas1() {
 
   const RESULT = 'transparênciaconfiança';
   const [word, setWord] = useState('');
-  const [disable, setDisable] = useState(true);
 
   function validate(ref, event, check) {
     if (event.target.value === check) {
@@ -56,67 +55,125 @@ function Embaralhadas1() {
           </S.Content>
           <S.Inputs>
             <S.Input
-              ref={input8Ref}
               background="#eff7fd"
               border="#009bdb"
-              maxLength={5}
-              onChange={(event) => validate(input1Ref, event, 'trans')}
-            />
+              win={
+                input8Ref.current ? input8Ref.current.value === 'trans' : false
+              }
+            >
+              <FaCheck color="#009045" />
+              <input
+                ref={input8Ref}
+                maxLength={5}
+                onChange={(event) => validate(input1Ref, event, 'trans')}
+              />
+            </S.Input>
             <S.Input
-              ref={input1Ref}
               background="#f8eff6"
               border="#ba007c"
-              maxLength={2}
-              onChange={(event) => validate(input2Ref, event, 'pa')}
-            />
+              win={input1Ref.current ? input1Ref.current.value === 'pa' : false}
+            >
+              <FaCheck color="#009045" />
+              <input
+                ref={input1Ref}
+                maxLength={2}
+                onChange={(event) => validate(input2Ref, event, 'pa')}
+              />
+            </S.Input>
             <S.Input
-              ref={input2Ref}
               background="#fdf8ec"
               border="#e9bb00"
-              maxLength={3}
-              onChange={(event) => validate(input3Ref, event, 'rên')}
-            />
+              win={
+                input2Ref.current ? input2Ref.current.value === 'rên' : false
+              }
+            >
+              <FaCheck color="#009045" />
+              <input
+                ref={input2Ref}
+                maxLength={3}
+                onChange={(event) => validate(input3Ref, event, 'rên')}
+              />{' '}
+            </S.Input>
+
             <S.Input
-              ref={input3Ref}
               background="#f0ebf5"
               border="#6d0f7d"
-              maxLength={3}
-              onChange={(event) => validate(input4Ref, event, 'cia')}
-            />
+              win={
+                input3Ref.current ? input3Ref.current.value === 'cia' : false
+              }
+            >
+              <FaCheck color="#009045" />
+              <input
+                ref={input3Ref}
+                maxLength={3}
+                onChange={(event) => validate(input4Ref, event, 'cia')}
+              />{' '}
+            </S.Input>
             <p>E</p>
             <S.Input
-              ref={input4Ref}
               background="#eff5ed"
               border="#009045"
               maxLength={3}
-              onChange={(event) => validate(input5Ref, event, 'con')}
-            />
+              win={
+                input4Ref.current ? input4Ref.current.value === 'con' : false
+              }
+            >
+              <FaCheck color="#009045" />
+              <input
+                ref={input4Ref}
+                maxLength={3}
+                onChange={(event) => validate(input5Ref, event, 'con')}
+                disabled={
+                  input4Ref.current ? input4Ref.current.value === 'con' : false
+                }
+              />{' '}
+            </S.Input>
             <S.Input
-              ref={input5Ref}
               background="#faf2e9"
               border="#d07401"
-              maxLength={2}
-              onChange={(event) => validate(input6Ref, event, 'fi')}
-            />
+              win={input5Ref.current ? input5Ref.current.value === 'fi' : false}
+            >
+              <FaCheck color="#009045" />
+              <input
+                ref={input5Ref}
+                maxLength={2}
+                onChange={(event) => validate(input6Ref, event, 'fi')}
+                disabled={
+                  input5Ref.current ? input5Ref.current.value === 'fi' : false
+                }
+              />{' '}
+            </S.Input>
             <S.Input
-              ref={input6Ref}
               background="#f8ede7"
               border="#bf0811"
               maxLength={2}
-              onChange={(event) => validate(input7Ref, event, 'an')}
-            />
+              win={input6Ref.current ? input6Ref.current.value === 'an' : false}
+            >
+              <FaCheck color="#009045" />
+              <input
+                ref={input6Ref}
+                maxLength={2}
+                onChange={(event) => validate(input7Ref, event, 'an')}
+                disabled={
+                  input6Ref.current ? input6Ref.current.value === 'an' : false
+                }
+              />{' '}
+            </S.Input>
             <S.Input
-              ref={input7Ref}
               background="#e9e8f4"
               border="#001d7e"
-              maxLength={2}
-              onChange={(event) => validate(input7Ref, event, 'ça')}
-            />
-            {word === RESULT ? (
-              <FaCheck className="checkmarck" color="#0097c1" />
-            ) : (
-              <></>
-            )}
+              win={input7Ref.current ? input7Ref.current.value === 'ça' : false}
+            >
+              <FaCheck color="#009045" />
+              <input
+                ref={input7Ref}
+                maxLength={2}
+                onChange={(event) => validate(input8Ref, event, 'ça')}
+                disabled={
+                  input7Ref.current ? input7Ref.current.value === 'ça' : false
+                }
+              />
+            </S.Input>
           </S.Inputs>
           <Button last onClick={() => goPage('5')}>
             Voltar
