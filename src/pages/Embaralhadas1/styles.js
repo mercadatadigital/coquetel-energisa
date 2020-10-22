@@ -13,6 +13,7 @@ export const Content = styled.div`
 
   justify-content: center;
   align-items: center;
+  margin-left: 20px;
 
   img {
     height: 100%;
@@ -27,6 +28,7 @@ export const Inputs = styled.div`
   justify-items: center;
   align-items: end;
   margin-left: 50px;
+  margin-bottom: 20px;
   color: black;
   gap: 5px;
 
