@@ -66,8 +66,17 @@ export const Input = styled.div`
     background: transparent;
   }
 
-  svg {
-    visibility: ${({ win }) => (win ? 'visible' : 'hidden')};
+  div.validation {
+    width: 16px;
+    height: 16px;
+    svg.win {
+      display: ${({ win }) => (win ? 'block' : 'none')};
+    }
+    svg.wrong {
+      width: 16px;
+      height: 16px;
+      display: ${({ wrong }) => (wrong ? 'block' : 'none')};
+    }
   }
 `;
 

@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import { FaCheck } from 'react-icons/fa';
+import { RiCloseLine } from 'react-icons/ri';
 import * as S from './styles';
 
 import Container from '../../components/Container';
@@ -25,6 +26,15 @@ function Embaralhadas1() {
   const input7Ref = useRef();
   const input8Ref = useRef();
 
+  const [word1, setWord1] = useState('');
+  const [word2, setWord2] = useState('');
+  const [word3, setWord3] = useState('');
+  const [word4, setWord4] = useState('');
+  const [word5, setWord5] = useState('');
+  const [word6, setWord6] = useState('');
+  const [word7, setWord7] = useState('');
+  const [word8, setWord8] = useState('');
+
   const RESULT = 'transparênciaconfiança';
   const [word, setWord] = useState('');
 
@@ -39,6 +49,10 @@ function Embaralhadas1() {
   const goPage = (page) => {
     history.push(page);
   };
+
+  function handleFocus(event) {
+    event.target.select();
+  }
 
   return (
     <Container>
@@ -57,56 +71,82 @@ function Embaralhadas1() {
             <S.Input
               background="#eff7fd"
               border="#009bdb"
-              win={
-                input8Ref.current ? input8Ref.current.value === 'trans' : false
-              }
+              win={word1 === 'trans'}
+              wrong={word1 !== 'trans' && word1.length === 5}
             >
-              <FaCheck color="#009045" />
+              <div className="validation">
+                <FaCheck className="win" color="#009045" />
+                <RiCloseLine className="wrong" color="red" />
+              </div>
               <input
+                onFocus={handleFocus}
                 ref={input8Ref}
                 maxLength={5}
-                onChange={(event) => validate(input1Ref, event, 'trans')}
+                onChange={(event) => {
+                  validate(input1Ref, event, 'trans');
+                  setWord1(event.target.value);
+                }}
               />
             </S.Input>
             <S.Input
               background="#f8eff6"
               border="#ba007c"
-              win={input1Ref.current ? input1Ref.current.value === 'pa' : false}
+              win={word2 === 'pa'}
+              wrong={word2 !== 'pa' && word2.length === 2}
             >
-              <FaCheck color="#009045" />
+              <div className="validation">
+                <FaCheck className="win" color="#009045" />
+                <RiCloseLine className="wrong" color="red" />
+              </div>
               <input
+                onFocus={handleFocus}
                 ref={input1Ref}
                 maxLength={2}
-                onChange={(event) => validate(input2Ref, event, 'pa')}
+                onChange={(event) => {
+                  validate(input2Ref, event, 'pa');
+                  setWord2(event.target.value);
+                }}
               />
             </S.Input>
             <S.Input
               background="#fdf8ec"
               border="#e9bb00"
-              win={
-                input2Ref.current ? input2Ref.current.value === 'rên' : false
-              }
+              win={word3 === 'rên'}
+              wrong={word3 !== 'rên' && word3.length === 3}
             >
-              <FaCheck color="#009045" />
+              <div className="validation">
+                <FaCheck className="win" color="#009045" />
+                <RiCloseLine className="wrong" color="red" />
+              </div>
               <input
+                onFocus={handleFocus}
                 ref={input2Ref}
                 maxLength={3}
-                onChange={(event) => validate(input3Ref, event, 'rên')}
+                onChange={(event) => {
+                  validate(input3Ref, event, 'rên');
+                  setWord3(event.target.value);
+                }}
               />{' '}
             </S.Input>
 
             <S.Input
               background="#f0ebf5"
               border="#6d0f7d"
-              win={
-                input3Ref.current ? input3Ref.current.value === 'cia' : false
-              }
+              win={word4 === 'cia'}
+              wrong={word4 !== 'cia' && word4.length === 3}
             >
-              <FaCheck color="#009045" />
+              <div className="validation">
+                <FaCheck className="win" color="#009045" />
+                <RiCloseLine className="wrong" color="red" />
+              </div>
               <input
+                onFocus={handleFocus}
                 ref={input3Ref}
                 maxLength={3}
-                onChange={(event) => validate(input4Ref, event, 'cia')}
+                onChange={(event) => {
+                  validate(input4Ref, event, 'cia');
+                  setWord4(event.target.value);
+                }}
               />{' '}
             </S.Input>
             <p>E</p>
@@ -114,64 +154,82 @@ function Embaralhadas1() {
               background="#eff5ed"
               border="#009045"
               maxLength={3}
-              win={
-                input4Ref.current ? input4Ref.current.value === 'con' : false
-              }
+              win={word5 === 'con'}
+              wrong={word5 !== 'con' && word5.length === 3}
             >
-              <FaCheck color="#009045" />
+              <div className="validation">
+                <FaCheck className="win" color="#009045" />
+                <RiCloseLine className="wrong" color="red" />
+              </div>
               <input
+                onFocus={handleFocus}
                 ref={input4Ref}
                 maxLength={3}
-                onChange={(event) => validate(input5Ref, event, 'con')}
-                disabled={
-                  input4Ref.current ? input4Ref.current.value === 'con' : false
-                }
+                onChange={(event) => {
+                  validate(input5Ref, event, 'con');
+                  setWord5(event.target.value);
+                }}
               />{' '}
             </S.Input>
             <S.Input
               background="#faf2e9"
               border="#d07401"
-              win={input5Ref.current ? input5Ref.current.value === 'fi' : false}
+              win={word6 === 'fi'}
+              wrong={word6 !== 'fi' && word6.length === 2}
             >
-              <FaCheck color="#009045" />
+              <div className="validation">
+                <FaCheck className="win" color="#009045" />
+                <RiCloseLine className="wrong" color="red" />
+              </div>{' '}
               <input
+                onFocus={handleFocus}
                 ref={input5Ref}
                 maxLength={2}
-                onChange={(event) => validate(input6Ref, event, 'fi')}
-                disabled={
-                  input5Ref.current ? input5Ref.current.value === 'fi' : false
-                }
+                onChange={(event) => {
+                  validate(input6Ref, event, 'fi');
+                  setWord6(event.target.value);
+                }}
               />{' '}
             </S.Input>
             <S.Input
               background="#f8ede7"
               border="#bf0811"
               maxLength={2}
-              win={input6Ref.current ? input6Ref.current.value === 'an' : false}
+              win={word7 === 'an'}
+              wrong={word7 !== 'an' && word7.length === 2}
             >
-              <FaCheck color="#009045" />
+              <div className="validation">
+                <FaCheck className="win" color="#009045" />
+                <RiCloseLine className="wrong" color="red" />
+              </div>{' '}
               <input
+                onFocus={handleFocus}
                 ref={input6Ref}
                 maxLength={2}
-                onChange={(event) => validate(input7Ref, event, 'an')}
-                disabled={
-                  input6Ref.current ? input6Ref.current.value === 'an' : false
-                }
+                onChange={(event) => {
+                  validate(input7Ref, event, 'an');
+                  setWord7(event.target.value);
+                }}
               />{' '}
             </S.Input>
             <S.Input
               background="#e9e8f4"
               border="#001d7e"
-              win={input7Ref.current ? input7Ref.current.value === 'ça' : false}
+              win={word8 === 'ça'}
+              wrong={word8 !== 'ça' && word8.length === 2}
             >
-              <FaCheck color="#009045" />
+              <div className="validation">
+                <FaCheck className="win" color="#009045" />
+                <RiCloseLine className="wrong" color="red" />
+              </div>{' '}
               <input
+                onFocus={handleFocus}
                 ref={input7Ref}
                 maxLength={2}
-                onChange={(event) => validate(input8Ref, event, 'ça')}
-                disabled={
-                  input7Ref.current ? input7Ref.current.value === 'ça' : false
-                }
+                onChange={(event) => {
+                  validate(input8Ref, event, 'ça');
+                  setWord8(event.target.value);
+                }}
               />
             </S.Input>
           </S.Inputs>
