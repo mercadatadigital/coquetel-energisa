@@ -90,7 +90,7 @@ function Embaralhadas1() {
             </S.Input>
             <S.Input
               background="#f8eff6"
-              border="#ba007c"
+              border="#ee1295"
               win={word2 === 'pa'}
               wrong={word2 !== 'pa' && word2.length === 2}
             >

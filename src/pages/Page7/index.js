@@ -111,7 +111,7 @@ function Page7() {
                 <InputGame value="ç" disabled />
               </S.InputArea>
               <S.InputArea>
-                <FaPlus color="purple" />
+                <ImPencil2 color="orange" />
                 <InputGame value="e" disabled />
               </S.InputArea>
               <S.InputArea>
@@ -307,7 +307,7 @@ function Page7() {
 
             <S.BoxGame>
               <S.InputArea>
-                <ImArrowRight color="lightblue" />
+                <BsFillTriangleFill color="lightblue" />
                 <InputGame
                   ref={input10Ref}
                   success={
@@ -520,7 +520,7 @@ function Page7() {
                 />
               </S.InputArea>{' '}
               <S.InputArea>
-                <FaVectorSquare color="orange" />
+                <FaCube color="orange" />
                 <InputGame
                   ref={input25Ref}
                   success={
