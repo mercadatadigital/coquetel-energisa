@@ -422,7 +422,7 @@ function Page2() {
             />
           </S.InputArea>
           <S.InputArea>
-            <GiSpades color="pink" />
+            <GiSwirledShell color="green" />
             <InputGame
               ref={input18Ref}
               success={
